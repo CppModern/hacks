@@ -11,7 +11,7 @@ vector<int> generator(unsigned amount) {
 	static uniform_int_distribution<int> dist(1, 1000);
 	vector<int> rivec;
 	for (unsigned i = 0; i <= amount; ++i) {
-		ivec.push_back(dist(eng));
+		rivec.push_back(dist(eng));
 	}
 	return rivec;
 }
@@ -19,6 +19,6 @@ vector<int> generator(unsigned amount) {
 int main(void) {
 	auto ivec = generator(9);
 	for (auto& x : ivec) {
-		cout << x;
+		cout << x << ". ";
 	}
 }
