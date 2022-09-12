@@ -1,4 +1,5 @@
-#include <ostream>
+#include <iostream>
+#
 #include <iterator>
 #include <vector>
 
@@ -8,8 +9,8 @@
 */
 
 using std::ostream_iterator;
-using std::cout;
 using std::vector;
+using std::cout;
 
 
 int main(void) {
